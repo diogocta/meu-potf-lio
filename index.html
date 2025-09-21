@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sens-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .sills li {
+            background: #007bff;
+            color: white;
+            padding: 5 px 10px;
+            border-radius: 5px;
+        }
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        @media (max-widht: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <p>Cientista da Computação em Formação</p>
+        <button onclick="toggleTheme()">Alternar Tema</button>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Diôgo, sou estudante de Ciência da Computação no 1º semestre. Estou aprendenndo Redes de Computadores, Segurança da Informação e Desenvolvimento We, e este é o meu portfólio para mostrar meus projetos!</p>
+        </section>
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desenvolvimento Web - HTML, CSS e JS(básico)</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:diogocosta965@gmail.com">diogocosta965@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/diogocta" target="_blank">github.com/diogocta</a></p>
+        </section>
+    </div>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
